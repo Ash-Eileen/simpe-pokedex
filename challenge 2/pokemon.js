@@ -13,7 +13,7 @@ let getPokemon = (num) => {
         let pokemonType1 = document.createElement("p");
         let pokemonType2 = document.createElement("p");
         let pokemonImage = document.createElement("img")
-        pokemonImage.src = `${response.data.sprites.front_default}`
+        pokemonImage.src = response.data.sprites.front_default
         pokemonName.textContent = `Name: ${response.data.name}`;
         pokemonType1.textContent = `Type 1: ${response.data.types[0].type.name}`;
         if (response.data.types[1]) {
